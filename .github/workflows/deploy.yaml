@@ -21,26 +21,12 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
 
-      - name: Deploy png
-        uses: google-github-actions/upload-cloud-storage@main
-        with:
-          path: ./*.png
-          destination: white-ribbon-therapy
+      - run: cd site
 
-      - name: Deploy manifest
-        uses: google-github-actions/upload-cloud-storage@main
-        with:
-          path: ./manifest.json
-          destination: white-ribbon-therapy
+      - run: pwd
 
-      - name: Deploy js
+      - name: Deploy
         uses: google-github-actions/upload-cloud-storage@main
         with:
-          path: ./*.js
-          destination: white-ribbon-therapy
-
-      - name: Deploy html
-        uses: google-github-actions/upload-cloud-storage@main
-        with:
-          path: ./*.html
+          path: .
           destination: white-ribbon-therapy
