@@ -41,7 +41,7 @@ self.addEventListener('fetch', function(event) {
               return response;
           }
   
-          return fetch(event.request, {credentials: include}).then(
+          return fetch(event.request, {credentials: 'include'}).then(
             function(response) {
               // Check if we received a valid response
               if(!response || response.status !== 200 || response.type !== 'basic') {
