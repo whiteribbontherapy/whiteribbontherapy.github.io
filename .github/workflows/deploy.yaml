@@ -21,12 +21,5 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
 
-      - run: cd site
-
-      - run: pwd
-
       - name: Deploy
-        uses: google-github-actions/upload-cloud-storage@main
-        with:
-          path: .
-          destination: white-ribbon-therapy
+        run: gsutil -m -r -d site gs://white-ribbon-therapy
