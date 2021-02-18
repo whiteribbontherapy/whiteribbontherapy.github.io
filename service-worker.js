@@ -59,7 +59,7 @@ self.addEventListener('fetch', function(event) {
   
               caches.open(CACHE_NAME)
                 .then(function(cache) {
-                    console.log("Caching new response.")
+                    console.log(`Caching new response for ${event.request.url}.`)
                     cache.put(event.request, responseToCache);
                 });
   
