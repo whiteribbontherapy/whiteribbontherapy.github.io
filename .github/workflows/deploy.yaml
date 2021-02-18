@@ -11,18 +11,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - id: setup-gcloud
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Gcloud
         uses: google-github-actions/setup-gcloud@master
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
 
-      - id: cli
-        run: gcloud info
-
-      - id: upload-files
+      - name: Deploy png
         uses: google-github-actions/upload-cloud-storage@main
         with:
-          path: .
+          path: ./*.png
+          destination: white-ribbon-therapy
+
+      - name: Deploy manifest
+        uses: google-github-actions/upload-cloud-storage@main
+        with:
+          path: ./manifest.json
+          destination: white-ribbon-therapy
+
+      - name: Deploy js
+        uses: google-github-actions/upload-cloud-storage@main
+        with:
+          path: ./*.js
+          destination: white-ribbon-therapy
+
+      - name: Deploy html
+        uses: google-github-actions/upload-cloud-storage@main
+        with:
+          path: ./*.html
           destination: white-ribbon-therapy
