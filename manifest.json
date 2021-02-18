@@ -1,18 +1,29 @@
 {
     "dir": "ltr",
     "lang": "English",
-    "name": "White Ribbon Therapy. Bringing you home to pour body",
     "short_name": "White Ribbon Therapy",
-    "scope": "/white-ribbon-therapy/index.html",
+    "name": "White Ribbon Therapy. Bringing you home to pour body",
+    "description": "White Ribbon Therapy is you coming home to your body.",
+    "scope": "/white-ribbon-therapy",
     "display": "standalone",
     "start_url": "https://storage.googleapis.com/white-ribbon-therapy/index.html",
     "background_color": "#000000",
     "theme_color": "transparent",
-    "description": "White Ribbon Therapy is about coming home to your body.",
     "orientation": "any",
     "related_applications": [],
     "prefer_related_applications": false,
-    "icons": [],
+    "icons": [
+        {
+            "src": "/white-ribbon-therapy/joanna-kosinska-DNjfFnDWBi0-unsplash_192.jpg",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/white-ribbon-therapy/joanna-kosinska-DNjfFnDWBi0-unsplash_512.jpg",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
     "url": "http://whiteribbontherapy.com/",
     "screenshots": []
 }
