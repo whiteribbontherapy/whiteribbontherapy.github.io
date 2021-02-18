@@ -1,8 +1,8 @@
 var CACHE_NAME = 'site';
 var urlsToCache = [
-  '/white-ribbon-therapy/index.html',
-  '/white-ribbon-therapy/cover.css',
-  '/white-ribbon-therapy/joanna-kosinska-DNjfFnDWBi0-unsplash.jpg'
+  '/',
+  '/cover.css',
+  '/joanna-kosinska-DNjfFnDWBi0-unsplash.jpg'
 ];
 
 // Install and cache

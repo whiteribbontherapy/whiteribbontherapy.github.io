@@ -9,7 +9,7 @@
     <title>White Ribbon Therapy - Bringing you home to your body</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
-    <link rel='manifest' href='/white-ribbon-therapy/manifest.json'>
+    <link rel='manifest' href='/manifest.json'>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -62,7 +62,7 @@
       // Based on: https://developers.google.com/web/fundamentals/primers/service-workers
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/white-ribbon-therapy/service-worker.js').then(function(registration) {
+          navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
             // Registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, function(err) {
