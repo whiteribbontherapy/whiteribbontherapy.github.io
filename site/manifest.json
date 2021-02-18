@@ -14,12 +14,12 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "/white-ribbon-therapy/joanna-kosinska-DNjfFnDWBi0-unsplash_192.jpg",
+            "src": "/white-ribbon-therapy/icons/joanna-kosinska-DNjfFnDWBi0-unsplash_192.jpg",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/white-ribbon-therapy/joanna-kosinska-DNjfFnDWBi0-unsplash_512.jpg",
+            "src": "/white-ribbon-therapy/icons/joanna-kosinska-DNjfFnDWBi0-unsplash_512.jpg",
             "type": "image/png",
             "sizes": "512x512"
         }
