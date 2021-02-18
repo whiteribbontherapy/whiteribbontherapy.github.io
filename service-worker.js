@@ -2,7 +2,8 @@ var CACHE_NAME = 'site';
 var urlsToCache = [
   '/',
   '/cover.css',
-  '/joanna-kosinska-DNjfFnDWBi0-unsplash.jpg'
+  '/joanna-kosinska-DNjfFnDWBi0-unsplash.jpg',
+  '/assets/dist/css/bootstrap.min.css'
 ];
 
 // Install and cache
